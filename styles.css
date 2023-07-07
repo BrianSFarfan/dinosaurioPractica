@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'mine-Font'; /* Nombre que le darás a la fuente */
+    src: url('font/Minecraft.ttf') format('truetype'); /* Ruta relativa a la ubicación de la fuente */
+  }
+  
+  body {
+  
+  }
 
 * {
+    font-family: 'mine-Font', sans-serif; /* Utiliza el nombre de la fuente especificado en font-family */
     padding: 0;
     margin: 0;
 }
@@ -141,7 +150,6 @@
     z-index: 10;
 
     color: #ffffff;
-    font-family: Verdana;
     font-size: 30px;
     font-weight: bold;
     text-align: right;
@@ -156,7 +164,6 @@
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 50px;
-    font-family: Verdana;
     font-weight: 700;
     justify-items: center;
     transition: display 1s linear;;
