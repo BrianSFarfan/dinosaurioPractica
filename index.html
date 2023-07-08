@@ -8,15 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="fondoBody">
-    <div class="score">0</div>
-
+    <div class="score">
+        <p>Puntos:</p>
+        <p class="scorePuntaje">0</p>
+    </div>
+    <div class="mejorPuntuacion">
+        <p>Mejor puntaje:</p>
+        <p id="mejorPuntuacion">0</p>
+    </div>
     <div class="contenedor">
         <div class="suelo"></div>
         <div class="dino dino-corriendo"></div>
     </div>
 
     <div class="game-over">
-        <h3>GAME OVER</h3>
+        <div>
+            <h3>GAME OVER</h3>
+            <div class="record">
+                <p>Nuevo record!</p>
+                <p id="score"></p>
+            </div>
+        </div>
         <button id="retry" class="retry" onClick="Retry()">Reintentar</button>
     </div>
     

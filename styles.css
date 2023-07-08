@@ -3,9 +3,6 @@
     src: url('font/Minecraft.ttf') format('truetype'); /* Ruta relativa a la ubicación de la fuente */
   }
   
-  body {
-  
-  }
 
 * {
     font-family: 'mine-Font', sans-serif; /* Utiliza el nombre de la fuente especificado en font-family */
@@ -15,17 +12,16 @@
 
 .fondoBody{
     height: 100vh;
-    background: linear-gradient(#b7d6c7 50%, transparent 50%) #ffe2d1;/*linear-gradient(#90ebff, white);*/
     display: flex;
     align-items: center;
     transition: all 1s linear;
+    position: relative;
 }
 
 .contenedor {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    
     position: relative;
     background-image: linear-gradient( 0deg, rgb(185, 255, 255) , rgb(95, 228, 243)) ;
     /* background: linear-gradient(#b7d6c7, transparent) #d1eaff;linear-gradient(#90ebff, white); */
@@ -133,12 +129,13 @@
 }
 
 .score{
-    background: rgba(44, 44, 44, 0.211);
+    margin-top: 15px;
     align-items: center;
     padding: 5px;
     justify-content: center;
     display: flex;
-
+    flex-direction: column;
+    
     min-width: 100px;
     height: 30px;
     
@@ -153,6 +150,7 @@
     font-size: 30px;
     font-weight: bold;
     text-align: right;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
 }
 
 .game-over{
@@ -171,7 +169,34 @@
     justify-content: center;
 
 }
+.record{
+    display: none;
+    animation:record 1s infinite;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+.mejorPuntuacion{
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
 
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    min-width: 100px;
+    height: 30px;
+    
+
+    position: absolute;
+    top: 10px ;
+    right: 10px;
+    z-index: 10;
+
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+}
 .retry{
     width: 100%;
     max-width: 300px;
@@ -197,6 +222,14 @@
     }
     to{
         background-position-x: -252px;
+    }
+}
+@keyframes record {
+    0%{
+        transform: scale(105%);
+    }
+    100%{
+        transform: scale(100%);
     }
 }
 
