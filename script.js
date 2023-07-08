@@ -235,20 +235,20 @@ function GanarPuntos() {
     console.log(score)
 
     textoScore.innerText = score;
-    if (score == 10) {
+    if (score == 15) {
         gameVel = 1;
         contenedor.classList.add("mediodia");
         fondoBody.classList.add("mediodia");
         dino.classList.add('colorDino1');
         suelo.classList.add('sueloMediodia');
-    } else if (score == 20) {
-        gameVel = 1.5;
+    } else if (score == 30) {
+        gameVel = 2;
         contenedor.classList.add("tarde");
         fondoBody.classList.add("tarde");
         dino.classList.add('colorDino2');
         suelo.classList.add('sueloTarde');
-    } else if (score == 30) {
-        gameVel = 2;
+    } else if (score == 60) {
+        gameVel = 3;
         contenedor.classList.add("noche");
         fondoBody.classList.add("noche");
         dino.classList.add('colorDino3');
