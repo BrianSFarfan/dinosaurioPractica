@@ -3,7 +3,9 @@
     src: url('font/Minecraft.ttf') format('truetype'); /* Ruta relativa a la ubicación de la fuente */
   }
   
-
+html{
+    transition: background-image 1s;
+}
 * {
     font-family: 'mine-Font', sans-serif; /* Utiliza el nombre de la fuente especificado en font-family */
     padding: 0;
