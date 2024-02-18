@@ -238,12 +238,12 @@ html {
 }
 
 .controller{
+    display: none;
     position: absolute;
     bottom: 0;
     height: 50vh;
     background-color: rgb(23, 23, 23);
     width: 100vw;
-    display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
@@ -281,7 +281,9 @@ html {
 }
 
 @media screen and (max-width: 720px) {
-    
+    .controller{
+        display: flex;
+    }
 
     .fondoBody,
     .contenedor {
