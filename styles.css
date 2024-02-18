@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'mine-Font';
-    /* Nombre que le darás a la fuente */
     src: url('font/Minecraft.ttf') format('truetype');
-    /* Ruta relativa a la ubicación de la fuente */
 }
 
 html {
@@ -11,7 +9,6 @@ html {
 
 * {
     font-family: 'mine-Font', sans-serif;
-    /* Utiliza el nombre de la fuente especificado en font-family */
     padding: 0;
     margin: 0;
 }
@@ -104,6 +101,7 @@ html {
 
 .sueloMediodia {
     filter: brightness(1.0);
+    --varSueloBG: rgb(126 223 179);
 }
 
 .sueloTarde {
@@ -151,17 +149,13 @@ html {
     justify-content: center;
     display: flex;
     flex-direction: column;
-
     min-width: 100px;
     height: 30px;
-
-
     position: absolute;
     top: 10px;
     right: 50%;
     transform: translate(50%, 0);
     z-index: 20;
-
     color: #ffffff;
     font-size: 30px;
     font-weight: bold;
@@ -184,6 +178,7 @@ html {
     align-items: center;
     justify-content: center;
     z-index: 10;
+    user-select: none;
 }
 
 .record {
@@ -196,22 +191,17 @@ html {
 
 .mejorPuntuacion {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
-
     align-items: center;
     padding: 5px;
     justify-content: center;
     display: flex;
     flex-direction: column;
-
     min-width: 100px;
     height: 30px;
-
-
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 20;
-
     color: #ffffff;
     font-size: 20px;
     text-align: right;
@@ -244,6 +234,7 @@ html {
     bottom: 0;
     height: 50vh;
     background-color: rgb(23, 23, 23);
+    backdrop-filter: brightness(1.1);
     width: 100vw;
     justify-content: center;
     gap: 20px;
@@ -254,6 +245,7 @@ html {
     border-radius: 10px;
     font-size: 3rem;
     opacity: 0.5;
+    user-select: none;
 }
 .controller button:active{
     opacity: 1;
