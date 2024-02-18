@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,20 +10,23 @@
     <link rel="icon" href="img/dino.ico" type="image/x-icon">
 
 </head>
-<body class="fondoBody" style="transition: 1s;"> 
-    <div class="score">
-        <p>Puntos:</p>
-        <p class="scorePuntaje">0</p>
-    </div>
-    <div class="mejorPuntuacion">
-        <p>Mejor puntaje:</p>
-        <p id="mejorPuntuacion">0</p>
-    </div>
-    <div class="contenedor">
-        <div class="suelo"></div>
-        <div class="dino dino-corriendo"></div>
-    </div>
 
+<body> 
+    <!-- GAME -->
+    <div class="fondoBody" style="transition: 1s;">
+        <div class="score">
+            <p>Puntos:</p>
+            <p class="scorePuntaje">0</p>
+        </div>
+        <div class="mejorPuntuacion">
+            <p>Mejor puntaje:</p>
+            <p id="mejorPuntuacion">0</p>
+        </div>
+        <div class="contenedor">
+            <div class="suelo"></div>
+            <div class="dino dino-corriendo"></div>
+        </div>
+         <!-- GAME OVER -->
     <div class="game-over">
         <div>
             <h3>GAME OVER</h3>
@@ -33,7 +37,14 @@
         </div>
         <button id="retry" class="retry" onClick="Retry()">Reintentar</button>
     </div>
-    
+    </div>
+    <!-- CONTROLES -->
+    <div class="controller">
+        <button onclick="Saltar()">A</button>
+        <button onclick="bajar()">B</button>
+    </div>
+   
     <script src="script.js"></script>
 </body>
+
 </html>

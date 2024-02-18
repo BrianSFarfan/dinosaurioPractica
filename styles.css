@@ -1,18 +1,22 @@
 @font-face {
-    font-family: 'mine-Font'; /* Nombre que le darás a la fuente */
-    src: url('font/Minecraft.ttf') format('truetype'); /* Ruta relativa a la ubicación de la fuente */
-  }
-  
-html{
+    font-family: 'mine-Font';
+    /* Nombre que le darás a la fuente */
+    src: url('font/Minecraft.ttf') format('truetype');
+    /* Ruta relativa a la ubicación de la fuente */
+}
+
+html {
     transition: background-image 1s;
 }
+
 * {
-    font-family: 'mine-Font', sans-serif; /* Utiliza el nombre de la fuente especificado en font-family */
+    font-family: 'mine-Font', sans-serif;
+    /* Utiliza el nombre de la fuente especificado en font-family */
     padding: 0;
     margin: 0;
 }
 
-.fondoBody{
+.fondoBody {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -25,22 +29,22 @@ html{
     height: 100vh;
     margin: 0 auto;
     position: relative;
-    background-image: linear-gradient( 0deg, rgb(185, 255, 255) , rgb(95, 228, 243)) ;
+    background-image: linear-gradient(0deg, rgb(185, 255, 255), rgb(95, 228, 243));
     /* background: linear-gradient(#b7d6c7, transparent) #d1eaff;linear-gradient(#90ebff, white); */
     transition: background-image 1s linear;
     overflow: hidden;
 }
 
 .mediodia {
-    background-image: linear-gradient(0deg, rgb(155, 188, 255) , rgb(95, 184, 243)) ;
+    background-image: linear-gradient(0deg, rgb(155, 188, 255), rgb(95, 184, 243));
 }
 
 .tarde {
-    background-image: linear-gradient(0deg, rgb(255, 198, 155) , rgb(243, 125, 95)) ;
+    background-image: linear-gradient(0deg, rgb(255, 198, 155), rgb(243, 125, 95));
 }
 
 .noche {
-    background-image: linear-gradient(0deg, rgb(47, 63, 154) , rgb(59, 41, 105)) ;
+    background-image: linear-gradient(0deg, rgb(47, 63, 154), rgb(59, 41, 105));
 }
 
 
@@ -59,15 +63,18 @@ html{
 
     transition: filter 0.3s;
 }
-.colorDino1{
+
+.colorDino1 {
     filter: hue-rotate(70deg) brightness(1) contrast(255);
 
 }
-.colorDino2{
+
+.colorDino2 {
     filter: hue-rotate(255deg) brightness(1) contrast(255);
-   
+
 }
-.colorDino3{
+
+.colorDino3 {
     filter: hue-rotate(25deg) brightness(1) contrast(255);
 
 }
@@ -75,6 +82,7 @@ html{
 .dino-corriendo {
     animation: animarDino 0.25s steps(2) infinite;
 }
+
 .dino-estrellado {
     background-position-x: -252px;
 }
@@ -92,16 +100,20 @@ html{
 
     filter: brightness(1.1);
 }
-.sueloMediodia{
+
+.sueloMediodia {
     filter: brightness(1.0);
 }
-.sueloTarde{
+
+.sueloTarde {
     filter: brightness(0.8);
 }
-.sueloNoche{
+
+.sueloNoche {
     filter: brightness(0.5);
 }
-.cactus{
+
+.cactus {
     width: 46px;
     height: 96px;
 
@@ -112,14 +124,15 @@ html{
 
     background: url(img/cactus1.png) no-repeat;
 }
-.cactus2{
+
+.cactus2 {
     width: 98px;
     height: 66px;
 
     background: url(img/cactus2.png) no-repeat;
 }
 
-.nube{
+.nube {
     width: 92px;
     height: 15px;
 
@@ -127,23 +140,23 @@ html{
     z-index: 0;
 
     background: url(img/nube.png) no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
-.score{
+.score {
     margin-top: 15px;
     align-items: center;
     padding: 5px;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    
+
     min-width: 100px;
     height: 30px;
-    
+
 
     position: absolute;
-    top: 10px ;
+    top: 10px;
     right: 50%;
     transform: translate(50%, 0);
     z-index: 10;
@@ -155,7 +168,7 @@ html{
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
 }
 
-.game-over{
+.game-over {
     display: none;
     position: absolute;
     width: 100%;
@@ -166,18 +179,21 @@ html{
     font-size: 50px;
     font-weight: 700;
     justify-items: center;
-    transition: display 1s linear;;
+    transition: display 1s linear;
+    ;
     align-items: center;
     justify-content: center;
 
 }
-.record{
+
+.record {
     display: none;
-    animation:record 1s infinite;
+    animation: record 1s infinite;
     font-size: 2rem;
     margin-top: 50px;
 }
-.mejorPuntuacion{
+
+.mejorPuntuacion {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.532);
 
     align-items: center;
@@ -188,10 +204,10 @@ html{
 
     min-width: 100px;
     height: 30px;
-    
+
 
     position: absolute;
-    top: 10px ;
+    top: 10px;
     right: 10px;
     z-index: 10;
 
@@ -199,7 +215,8 @@ html{
     font-size: 20px;
     text-align: right;
 }
-.retry{
+
+.retry {
     width: 100%;
     max-width: 300px;
     margin: 0 10px;
@@ -213,27 +230,61 @@ html{
     border: 2px solid;
     cursor: pointer;
 }
-.retry:hover{
+
+.retry:hover {
     background: white;
     color: black;
     transform: scale(1.1);
 }
-@keyframes animarDino{
-    from{
+
+.controller{
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    background-color: rgb(23, 23, 23);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.controller button{
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 3rem;
+    opacity: 0.5;
+}
+.controller button:hover{
+    transform: scale(1.1);
+}
+.controller button:active{
+    opacity: 1;
+}
+@keyframes animarDino {
+    from {
         background-position-x: -84px;
     }
-    to{
+
+    to {
         background-position-x: -252px;
     }
 }
+
 @keyframes record {
-    0%{
+    0% {
         transform: scale(105%);
     }
-    100%{
+
+    100% {
         transform: scale(100%);
     }
 }
 
-
+@media screen and (max-width: 720px) {
     
+
+    .fondoBody,
+    .contenedor {
+        height: 50vh;
+    }
+}
