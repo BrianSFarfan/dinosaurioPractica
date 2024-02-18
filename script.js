@@ -86,6 +86,7 @@ function Start() {
     var auxWidth = contenedor.clientWidth;
     if(auxWidth < 720){
         impulso = 500;
+        gravedad = 2000;
     }
 }
 

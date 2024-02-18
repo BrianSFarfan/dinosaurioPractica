@@ -33,6 +33,7 @@ html {
     /* background: linear-gradient(#b7d6c7, transparent) #d1eaff;linear-gradient(#90ebff, white); */
     transition: background-image 1s linear;
     overflow: hidden;
+    z-index: 5;
 }
 
 .mediodia {
@@ -159,7 +160,7 @@ html {
     top: 10px;
     right: 50%;
     transform: translate(50%, 0);
-    z-index: 10;
+    z-index: 20;
 
     color: #ffffff;
     font-size: 30px;
@@ -179,11 +180,10 @@ html {
     font-size: 50px;
     font-weight: 700;
     justify-items: center;
-    transition: display 1s linear;
-    ;
+    transition: display 1s linear;;
     align-items: center;
     justify-content: center;
-
+    z-index: 10;
 }
 
 .record {
@@ -191,6 +191,7 @@ html {
     animation: record 1s infinite;
     font-size: 2rem;
     margin-top: 50px;
+    z-index: 20;
 }
 
 .mejorPuntuacion {
@@ -209,7 +210,7 @@ html {
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 10;
+    z-index: 20;
 
     color: #ffffff;
     font-size: 20px;
@@ -282,7 +283,9 @@ html {
     .controller{
         display: flex;
     }
-
+    .fondoBody .score , .fondoBody .mejorPuntuacion{
+        font-size: 1rem;
+    }
     .fondoBody,
     .contenedor {
         height: 50vh;
