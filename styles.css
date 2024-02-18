@@ -254,11 +254,9 @@ html {
     font-size: 3rem;
     opacity: 0.5;
 }
-.controller button:hover{
-    transform: scale(1.1);
-}
 .controller button:active{
     opacity: 1;
+    transform: scale(1.1);
 }
 @keyframes animarDino {
     from {
@@ -289,4 +287,8 @@ html {
     .contenedor {
         height: 50vh;
     }
+    .contenedor .dino, .contenedor .cactus, .contenedor .cactus2{
+        transform: scale(0.5) translateY(43px);
+    }
+
 }

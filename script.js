@@ -24,6 +24,7 @@ function Loop() {
     requestAnimationFrame(Loop);
 }
 
+    
 //****** GAME LOGIC ********//
 
 var sueloY = 22;
@@ -81,7 +82,11 @@ function Start() {
  
     var mejorPuntaje = document.getElementById('mejorPuntuacion');
     mejorPuntaje.innerHTML = puntuacionMaxima;
-
+    console.log('TAMAÑO X: ' ,contenedor.clientWidth);
+    var auxWidth = contenedor.clientWidth;
+    if(auxWidth < 720){
+        impulso = 500;
+    }
 }
 
 function Update() {
